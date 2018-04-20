@@ -50,7 +50,7 @@ public class regisLogin extends idpw{
         String pwi=sc.nextLine();
         for(int z=0;z<=id.length-1;z++){
             if(idi.equals(id[z])&&pwi.equals(pw[z])){
-                System.out.println("------------------ success ------------------\n"); i=z; l=z;
+                System.out.println("------------------ success ------------------\n"); i=z; 
                 mainmenu m = new mainmenu();
                 m.mainmenu(name[i],i);
                 m.menu();       

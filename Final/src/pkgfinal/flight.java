@@ -22,6 +22,7 @@ public class flight extends option1 {
     }
 
     void type(){     
+        System.out.println(i);
         Scanner cr= new Scanner(System.in);
         System.out.println("press 1 ONEWAY");
         System.out.println("press 2 ROUND TRIP");

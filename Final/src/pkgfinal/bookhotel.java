@@ -11,7 +11,7 @@ public class bookhotel implements hotellist {
         int i=0,j=1;
         Scanner sc= new Scanner(System.in);
        
-        for(;i<20;i++){
+        for(;i<36;i++){
             if(town.equals(hotel[i][0])){
                 do{
                     if(!hotel[i][j].equals("")){
@@ -20,7 +20,7 @@ public class bookhotel implements hotellist {
                         cost=cht[i][j];
                     }
                     j++;
-                }while(j!=5);i=20;
+                }while(j!=5);i=36;
             }else{k=-1;}
         }if(k==-1){
             System.out.println("-------------- error --------------");
