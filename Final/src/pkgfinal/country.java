@@ -1,14 +1,71 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package pkgfinal;
-
-/**
- *
- * @author KANG
- */
-public class country {
+import java.util.*;
+interface  country {
+    static String ctr[][]={ {"CHINA","PAKJING","SHANGHAI","HONG KONG","CHONGQING"},
+                            {"RUSSIA","MOSCOW","ST.PETERSBURG","KAZAN","BREMEN",""},
+                            {"INDIA","BANGALORE","NEW DELHI","",""},
+                            {"THAILAND","BANKOK","PHUKET","CHIANG MAI","",""},
+                            {"MYANMAR","NAYPYDAW","YANGON","",""},
+                            {"MALAYSIA","KUALA LUMPUR","MUKAH","",""},
+                            {"PHILIPPINES","MANILA","DAVAO","",""},
+                            {"VIETNAM","HO CHI MINH","DA NANG","",""},
+                            {"INDONEESIA","JAKARTA","SURABAYA","",""},
+                            {"JAPAN","NARITA","HIROSHIMA","",""},
+                            {"SOUTH KOREA","SOUL","BUSAN","",""},
+                            {"NORTH KOREA","PYONGYANG","","",""},
+                            {"CAMBODIA","PHNOM PENH","","",""},
+                            {"TAJIKISTAN","DUSHANBE","","",""},
+                            {"UZBEKISTAN","TASHKENT","","",""},
+                            {"TURKMENISTAN","ASHGABAT","","",""},
+                            {"KAZAKHSTAN","ASTANA","","",""},
+                            {"BANGLADESH","DHAKA","","",""},
+                            {"BHUTAN","THIMPHU","","",""},
+                            {"NEPAL","KATHMANDU","","",""}                                   }; //20
+     static double lati[][]={ {0, 40.079346 , 31.145605 , 22.308057, 29.718657 },
+                              {0, 55.410222 , 59.802857 , 55.607364, 53.047964 },
+                              {0, 13.198686, 28.556156  },
+                              {0, 13.691022, 8.111069, 18.767699 },
+                              {0, 19.615047, 16.902769},
+                              {0, 2.745520, 2.906650},
+                              {0, 14.512348,7.130873},
+                              {0, 10.818442, 16.055277},
+                              {0, -6.127425, -7.378865 },
+                              {0, 35.771978, 34.439908},
+                              {0, 37.460195,35.173205},
+                              {0,39.200892},
+                              {0,11.552666},
+                              {0,38.548746},
+                              {0,41.257198},
+                              {0,37.984511},
+                              {0,51.027071},
+                              {0,23.843464},
+                              {0,27.406133},
+                              {0,27.698098},                                    };
+     static double longti[][]={ {0, 116.598740 , 121.807774 , 113.917152, 106.641458},
+                                {0, 37.901503 , 30.268202 , 49.280381 , 8.785976 },
+                                {0, 77.706741, 77.100301 },
+                                {0, 100.749201, 98.306620, 98.964492},
+                                {0, 96.213389, 96.135425 },
+                                {0, 101.707080, 112.080717 },
+                                {0, 121.016696, 125.644158},
+                                {0, 106.658672, 108.201441  },
+                                {0, 106.654018, 112.787389 },
+                                {0, 140.392705, 132.919119},
+                                {0, 126.440903, 128.946547},
+                                {0, 125.676858},
+                                {0, 104.845264},
+                                {0, 68.815512},
+                                {0, 69.281536},
+                                {0, 58.366447},
+                                {0, 71.460916},
+                                {0, 90.403005},
+                                {0, 89.420219},
+                                {0, 85.359170},                                 };
+    GregorianCalendar time = new GregorianCalendar();
+    static int cyr=time.get(Calendar.YEAR),cmt=time.get(Calendar.MONTH),cdy=time.get(Calendar.DATE),
+               chr=time.get(Calendar.HOUR),cmn=time.get(Calendar.MINUTE),csc=time.get(Calendar.SECOND);
     
-}
+    String getWhere();
+} 
+    
+

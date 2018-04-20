@@ -1,7 +1,10 @@
 package pkgfinal;
-public class idpw {
-    public String id[]=new String[999];
-    public String pw[]=new String[999];
-    public String name[]=new String[999];
-    public int i=0;
+abstract class  idpw {
+    static String id[]=new String[999];
+    static String pw[]=new String[999];
+    static String name[]=new String[999];
+    static int i=0;
+    static int a=0;
+    static String names=null;
+    
 }
