@@ -1,7 +1,7 @@
 package pkgfinal;
 import java.util.*;
 public class flight extends option1 {
-    static int i,type;
+    static int type;
     static String sorce,dtn,godate,bdate;
     static int goday,gomounth,goyear;
     static int todsorce, tomsorce, toysorce;
@@ -15,7 +15,7 @@ public class flight extends option1 {
 
     flight(int x){
         this();
-        this.i=x;
+        super.i=x;
     }   
     flight(String c){
         System.out.println(c);

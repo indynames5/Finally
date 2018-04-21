@@ -1,6 +1,6 @@
 package pkgfinal;
 import java.util.*;
-public class Proflie {
+public class Proflie extends mainmenu{
     public void main (){
         Scanner sc = new Scanner(System.in);
         System.out.println("\n============================================="
@@ -20,17 +20,18 @@ public class Proflie {
     }    
     public void fi(){
         flight a=new flight("\n---------------- Book Flight ----------------\n");
+        System.out.println(a.i);
         for (int l = 0; l <999; l++) {
-            if(a.bsorce[a.i][l]!=null){
-                System.out.println("\nSort : "+a.bsorce[a.i][l]);
-                System.out.println("Destination : "+a.bdtn[a.i][l]);
-                System.out.println("GO Date : "+a.tgo[a.i][l]);
+            if(a.bsorce[u][l]!=null){
+                System.out.println("\nSort : "+a.bsorce[u][l]);
+                System.out.println("Destination : "+a.bdtn[u][l]);
+                System.out.println("GO Date : "+a.tgo[u][l]);
                 if(a.tback[a.i][l]!=null){ 
-                    System.out.println("BACK Date : "+a.tback[a.i][l]);
+                    System.out.println("BACK Date : "+a.tback[u][l]);
                 }
-                System.out.println(a.sAir[a.i][l]);
-                if(a.a[l]==2)System.out.println(a.dAir[a.i][l]);
-                System.out.println("Travel Time : "+a.hr[a.i][l]+" hr");
+                System.out.println(a.sAir[u][l]);
+                if(a.a[l]==2)System.out.println(a.dAir[u][l]);
+                System.out.println("Travel Time : "+a.hr[u][l]+" hr\n");
                 System.out.println("-------------------------------------------");
             }
         }
@@ -39,11 +40,11 @@ public class Proflie {
     public void ht(){
         hotel b=new hotel("\n---------------- Book Hotel ----------------\n");
         for (int k = 0; k <999; k++) {
-            if(b.dhotel[b.l][k]!=null){
-            System.out.println("Date : "+b.dhotel[b.l][k]);
-            System.out.println("Country : "+b.ctr[b.l][k]);
-            System.out.println("Town : "+b.town[b.l][k]);
-            System.out.println("Price :"+b.price[b.l][k]);
+            if(b.dhotel[u][k]!=null){
+            System.out.println("Date : "+b.dhotel[u][k]);
+            System.out.println("Country : "+b.ctr[u][k]);
+            System.out.println("Town : "+b.town[u][k]);
+            System.out.println("Price :"+b.price[u][k]);
             }
         }System.out.println("-------------------------------------------");
         System.out.println("");

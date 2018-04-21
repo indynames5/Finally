@@ -1,6 +1,7 @@
 package pkgfinal;
 import java.util.*;   
 abstract public  class option1 {
+    public static   int i;
     static  String bsorce[][]=new String[999][999];
     static  String bdtn[][]=new String[999][999];
     static  String tgo[][]=new String[999][999];

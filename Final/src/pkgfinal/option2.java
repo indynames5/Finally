@@ -1,6 +1,7 @@
 package pkgfinal;
 abstract class option2 {
-     static int k=0;
+    
+     public static int l,k=0;
      public static String ctr[][] = new String[999][999];
      public static String town[][] = new String[999][999];
      public static String dhotel[][] = new String[999][999];

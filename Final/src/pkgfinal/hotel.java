@@ -2,7 +2,7 @@ package pkgfinal;
 import java.util.*;
 public class hotel extends option2 implements hotellist{
     static public String country,bdate;
-    static int l,cday,cmounth,cyear,room, zx,zc,zv;
+    static int cday,cmounth,cyear,room, zx,zc,zv;
     static double high;
     hotel(){
         System.out.println("\n============================================="
